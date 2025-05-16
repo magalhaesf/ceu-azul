@@ -1,5 +1,7 @@
 package com.magalhaes;
 
+import com.magalhaes.conexao.Conexao;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+       Conexao conexao = new Conexao();
+
+       conexao.getConexao();
     }
 }
