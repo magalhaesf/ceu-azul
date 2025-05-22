@@ -4,11 +4,11 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import com.magalhaes.conexao.Conexao;
-import com.magalhaes.pojo.petshopPojo;
+import com.magalhaes.pojo.petShopPojo;
 
 public class PetshopDao {
 
-    public void cadastrarPetshop(petshopPojo petshopPojo){
+    public void cadastrarPetshop(petShopPojo petshopPojo){
 
         //Cria a conexão com o banco de dados
         //a variável conexão recebe um novo objeto do tipo Conexao
@@ -16,7 +16,7 @@ public class PetshopDao {
 
         //Criado variável do tipo String "texto", recebe um texto de insert
         //os símbolos de interrogação são os parâmetros que vem de fora do sistema 
-        String sqlInsert = "insert into cachorro(nome, email, telefone, cnpj) value (?, ?, ?, ?);";
+        String sqlInsert = "insert into petshop(nome, email, telefone, cnpj) value (?, ?, ?, ?);";
 
         //Cria a váriavel do tipo PreparedStatement
         //Responsavel por preparar a sql (insert)

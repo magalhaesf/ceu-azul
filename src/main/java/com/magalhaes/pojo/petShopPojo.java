@@ -1,6 +1,6 @@
 package com.magalhaes.pojo;
 
-public class petshopPojo {
+public class petShopPojo {
 
     private String nome;
     private String email;
@@ -8,10 +8,10 @@ public class petshopPojo {
     private String cnpj;
     
    @Deprecated
-    public petshopPojo() {
+    public petShopPojo() {
     }
 
-    public petshopPojo(String nome, String email, String telefone, String cnpj) {
+    public petShopPojo(String nome, String email, String telefone, String cnpj) {
     this.nome = nome;
     this.email = email;
     this.telefone = telefone;
