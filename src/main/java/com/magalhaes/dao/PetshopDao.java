@@ -28,11 +28,21 @@ public class PetshopDao {
             //Pegar uma conexao e preparar a sql
             ps = conexao.getConexao().prepareStatement(sqlInsert);
 
+            //setar a informação no ps. Pego a informação do Pojo
             ps.setString(1, petshopPojo.getNome());
+            ps.setString(2, petshopPojo.getEmail());
+            ps.setString(3, petshopPojo.getTelefone());
+            ps.setString(4, petshopPojo.getCnpj());
+
+            ps.execute();
+            ps.close();
+
+            System.out.println("Gravou o Petshop!!");
 
         } catch (SQLException e) {
             //lança um erro (imprimir)
             e.printStackTrace();
+            System.out.println("Não gravou");
         }
     }
 

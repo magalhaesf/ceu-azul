@@ -1,43 +1,57 @@
 package com.magalhaes.modelo;
 
-public class Cachorrinho {
+public class Petshop {
     private String nome;
-    private String raca;
-    private String idade;
-
+    private String email;
+    private String telefone;
+    private String cnpj;
+ 
 @Deprecated
-public Cachorrinho() {
+    public Petshop() {
 }
 
-public Cachorrinho(String nome, String raca, String idade) {
-    this.nome = nome;
-    this.raca = raca;
-    this.idade = idade;
-}
 
-public String getNome() {
-    return nome;
-}
+public Petshop(String nome, String email, String telefone, String cnpj) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.cnpj = cnpj;
+    }
 
-public void setNome(String nome) {
-    this.nome = nome;
-}
+    public String getNome() {
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+      
+    public String getEmail() {
+        return email;
+    }
+    
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public String getTelefone() {
+        return telefone;
+    }
+    
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
-public String getRaca() {
-    return raca;
-}
-
-public void setRaca(String raca) {
-     this.raca = raca;
-}
-
-public String getIdade() {
-    return idade;
- }
-
-public void setIdade(String idade) {
-    this.idade = idade;
-}
+    public String getCnpj() {
+        return cnpj;
+    }
+    
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+     
+    }
+    
 
 @Override
 public String toString() {
@@ -81,5 +95,3 @@ public boolean equals(Object obj) {
         return true;
     }
 
- 
-}
