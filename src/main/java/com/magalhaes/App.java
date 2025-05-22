@@ -10,8 +10,8 @@ public class App
 {
     public static void main( String[] args )
     {
-       Conexao conexao = new Conexao();
+      // Conexao conexao = new Conexao();
 
-       conexao.getConexao();
-    }
-}
+      //  conexao.getConexao();
+     }
+ }
